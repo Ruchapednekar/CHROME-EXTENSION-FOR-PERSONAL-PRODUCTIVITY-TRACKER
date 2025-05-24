@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Personal Productivity Tracker",
+  "version": "1.0",
+  "description": "Track daily goals, time spent on websites, and productivity trends",
+  "permissions": ["storage", "tabs", "webNavigation"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "Open Productivity Tracker"
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}
